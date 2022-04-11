@@ -383,7 +383,7 @@ body{
     font-weight: normal;
     border: 1px solid #FFFFFF;
     border-radius: 35px;
-    transition: .3s;
+    transition: .1s;
 }
 
 .footer .btn.btn-social:hover {
@@ -399,7 +399,7 @@ body{
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
-    transition: .3s;
+    transition: .1s;
 }
 
 .footer .btn.btn-link::before {

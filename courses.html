@@ -10,12 +10,12 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-
+    
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
-
+    
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -26,9 +26,17 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -42,7 +50,7 @@
 
 
     <!-- Navbar Start -->
-    <nav style="font-weight: 900;" class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <nav style="font-weight: 900; font-family: 'Bitter', serif;" class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>TLUS</h2>
         </a>
@@ -51,9 +59,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
+                <a href="index.html" class="nav-item nav-link">Trang Chủ</a>
                 <a href="about.html" class="nav-item nav-link">Giới Thiệu</a>
-                <a href="courses.html" class="nav-item nav-link">Đăng Kí Nhập Học</a>
+                <a href="courses.html" class="nav-item nav-link active">Đăng Kí Nhập Học</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-down m-0">
@@ -64,444 +72,55 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Liên Hệ</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Đăng Nhập<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" style="font-family:'Bitter', serif">Đăng Nhập<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
     <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Đăng Kí Nhập Học</h1>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Header End -->
     <!-- Form Đăng Kí Start -->
-    <div class="dangki">
-        <section class="home-content">
-        <!-- Nhập Thông Tin Sinh Viên-->
-        <div class="container ttsv"> 
-            <div class="title" style="font-size: 30px;">Thông tin sinh viên</div>
-            <div class="content">
-                <form action="#">
-                <div class="user-details">
-        
-                    <div class="input-box" style="position: static; float: left;">
-                    <span class="details" >Họ và tên</span>
-                    <input type="text" id="txtten" name="name" placeholder="Nhập họ và tên" required>
-                    </div>
-                    <div class="input-box">
-                    <span class="details">Ngày Tháng Năm Sinh</span>
-                    <td>
-                        <select name="BirthDay" id="ngaysinhsv" style="height: 45px; border-radius: 5px; width:0px; font-size: 16px; opacity: 0.7; text-align: center;">
-                        <option value="-1">Ngày:</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        </select>
-                        <select name="BirthdayMonth" id="thangsinhsv" style="height: 45px; border-radius: 5px; width: calc(100%/3); font-size: 16px; opacity: 0.7; text-align: center;">
-                        <option value="-1">Tháng:</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        </select>
-                            
-                        <select name="BirthdayYear" id="namsinhsv" style="height: 45px; border-radius: 5px; width: calc(30%); font-size: 16px; opacity: 0.7; text-align: center;">
-                        <option value="-1">Năm:</option>
-                        <option value="2003">2003</option>
-                        <option value="2002">2002</option>
-                        <option value="2001">2001</option>
-                        <option value="2000">2000</option>
-                        <option value="1999">1999</option>
-                        <option value="1998">1998</option>
-                        <option value="1997">1997</option>
-                        <option value="1996">1996</option>
-                        <option value="1995">1995</option>
-                        <option value="1994">1994</option>
-                        <option value="1993">1993</option>
-                        <option value="1992">1992</option>
-                        <option value="1991">1991</option>
-                        <option value="1990">1990</option>
-                        <option value="1989">1989</option>
-                        <option value="1988">1988</option>
-                        <option value="1987">1987</option>
-                        <option value="1986">1986</option>
-                        <option value="1985">1985</option>
-                        <option value="1984">1984</option>
-                        <option value="1983">1983</option>
-                        <option value="1982">1982</option>
-                        <option value="1981">1981</option>
-                        <option value="1980">1980</option>
-                        </select>
-                    </td>
-                    </div>
-                    <div class="input-box"  style="position: static; float: left;">
-                    <span class="details">CMND/CCCD</span>
-                    <input type="number" id="txtcmnd" name="CMNDCCCD" placeholder="Nhập số CMND/CCCD" required>
-                    </div>
-                    <div class="input-box"  style="position: static; float: right;">
-                    <span class="details">Quốc tịch</span>
-                    <input type="text" id="txtquoctich" name="nation" placeholder="Nhập quốc tịch" required>
-                    </div>
-                    <div class="input-box"  style="position: static; float: left;">
-                    <span class="details" >Email</span>
-                    <input type="text" id="txtmail" name="email" placeholder="Nhập địa chỉ email" required>
-                    </div>
-                    <div class="input-box">
-                    <span class="details">Số điện thoại</span>
-                    <input type="number" id="txtsdt" name="phonenumber" placeholder="Nhập sdt liên hệ" required>
-                    </div>
-                </div>
-                <div class="gender-details">
-                    <input type="radio" name="gender" id="dot-1" value="Nam">
-                    <input type="radio" name="gender" id="dot-2" value="Nữ">
-                    <input type="radio" name="gender" id="dot-3" value="Khác" checked>
-                    <span class="gender-title">Giới tính</span>
-                    <div class="category">
-                    <label for="dot-1">
-                    <span class="dot one"></span>
-                    <span class="gender">Nam</span>
-                    </label>
-                    <label for="dot-2">
-                    <span class="dot two"></span>
-                    <span class="gender">Nữ</span>
-                    </label>
-                    <label for="dot-3">
-                    <span class="dot three"></span>
-                    <span class="gender">Khác</span>
-                    </label>
-                    </div>
-                </div>
-                <div class="input-box" >
-                    <span class="details">Địa chỉ</span>
-                    <textarea name="" id="txtdiachi" rows="10" cols="83" placeholder="Nhập địa chỉ nơi sinh sống"></textarea>
-                </div>
-                <div class="input-box" style="margin-top: 10px;">
-                    <span class="details">Ảnh Chân Dung</span>
-                    <input class="" type="file" id="chandung">
-                    <div class="col-sm-2 is-hidden chandung">
-                        <img src="" id="imgPreviewchandung" accept="images/*">
-                        <i class="fa fa-trash " onclick="DeleteFileAnh('chandung')" ></i>
-                    </div>
-                    </div>
-                <div class="input-box" style="margin-top: 10px;">
-                    <span class="details">Ảnh CMND/CCCD (Mặt trước)</span>
-                    <input class="" type="file" id="cmndtrc">
-                    <div class="col-sm-2 cmndtrc is-hidden">
-                    <img src="" id="imgPreviewcmndtrc" width="50px" height="50px" accept="images/*">
-                    <i class="fa fa-trash " onclick="DeleteFileAnh('cmndtrc')"></i>
-                    </div>
-                </div>
-                <div class="input-box"style="margin-top: 10px;">
-                    <span class="details">Ảnh CMND/CCCD (Mặt sau)</span>
-                    <input class="file-upload-input" type="file" id="cmndsau">
-                    <div class="col-sm-2 cmndsau is-hidden">
-                        <img src="" id="imgPreviewcmndsau" width="50px" height="50px"  accept="images/*">
-                        <i class="fa fa-trash" onclick="DeleteFileAnh('cmndsau')"></i>
-                    </div>
-                </div>
-                </form>
-            </div>
-        </div>
-        
-        <!-- Nhập Thông Tin Hồ Sơ-->
-        <div class="container tths is-hidden" style="margin-top: 10px; margin-bottom: 10px; height: auto"> 
-            <div class="title">Thông Tin Hồ Sơ</div>
-            <div class="content">
-                <form action="#">
-                <div class="user-details">
-        
-                    <div class="input-box">
-                    <span class="details">Họ và tên</span>
-                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
-                    </div>
-                    <div class="input-box">
-                    <span class="details">CMND/CCCD</span>
-                    <input type="number" id="CMNDCCCD" name="CMNDCCCD" placeholder="Nhập số CMND/CCCD" required>
-                    </div>
-                </div>
-        
-                <div class="input-box" style="margin-top: 10px;">
-                    <span class="details">Ảnh Bằng Tốt Nghiệp (Gốc / Tạm thời)</span>
-                    <input class="file-upload-input " type="file" id="bangtn" name="myfile">
-                    <div class="col-sm-2 bangtn is-hidden">
-                    <img src="" id="imgPreviewbangtn" width="50px" height="50px">
-                    <i class="fa fa-trash" onclick="DeleteFileAnh('bangtn')" accept="images/*"></i>
-                    </div>
-                </div>
-                <div class="input-box" style="margin-top: 10px;">
-                    <span class="details">Ảnh Thẻ Dự Thi</span>
-                    <input class="file-upload-input " type="file" id="theduthi" name="myfile">
-                    <div class="col-sm-2 theduthi is-hidden">
-                    <img src="" id="imgPreviewtheduthi" width="50px" height="50px" accept="images/*">
-                    <i class="fa fa-trash" onclick="DeleteFileAnh('theduthi')" ></i>
-                    </div>
-                </div>
-                <div class="input-box"style="margin-top: 10px;">
-                    <span class="details">Ảnh Bảng Điểm</span>
-                    <input class="file-upload-input " type="file" id="bangdiem" name="myfile">
-                    <div class="col-sm-2 bangdiem is-hidden">
-                    <img src="" id="imgPreviewbangdiem" width="50px" height="50px" accept="images/*">
-                    <i class="fa fa-trash" onclick="DeleteFileAnh('bangdiem')" ></i>
-                    </div>
-                </div>
-                <div class="input-box"style="margin-top: 10px;">
-                <span class="details">Ảnh Giấy chứng nhận nghĩa vụ quân sự do ban CHQS cấp</span>
-                <input class="file-upload-input " type="file" id="nvqs" name="myfile">
-                <div class="col-sm-2 nvqs is-hidden">
-                    <img src="" id="imgPreviewnvqs" width="50px" height="50px" accept="images/*">
-                    <i class="fa fa-trash" onclick="DeleteFileAnh('nvqs')"></i>
-                </div>
-                </div>
-                </form>
-            </div>
-        </div>
-        <!-- Nhập Thông Tin Lý Lịch -->
-        <div class="container ttll is-hidden" style="margin-top: 10px; margin-bottom: 10px; height: auto"> 
-        <div class="title">Thông Tin Lý Lịch</div>
-        <div class="content">
-            <form action="#">
-            <div class="user-details">
-                <div class="input-box">
-                <span class="details">Họ và Tên Cha</span>
-                <input type="text" id="txttencha" name="name" placeholder="Nhập Họ và Tên Cha" required>
-                </div>
-                <div class="input-box">
-                <span class="details">CMND/CCCD Cha</span>
-                <input type="text" id="txtcmndcha" name="CMNDCCCD" placeholder="Nhập số CMND/CCCD" required>
-                </div>
-                <div class="input-box">
-                <span class="details">Ngày Tháng Năm Sinh Cha</span>
-                <td>
-                    <select name="BirthDay" id="ngaysinhcha" style="height: 45px; border-radius: 5px; width: calc(100% / 3); font-size: 16px; opacity: 0.7; text-align: center;">
-                    <option value="-1">Ngày:</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-                    </select>
-                    <select name="BirthdayMonth" id="thangsinhcha" style="height: 45px; border-radius: 5px; width: calc(100%/3); font-size: 16px; opacity: 0.7; text-align: center;">
-                    <option value="-1">Tháng:</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    </select>
-                        
-                    <select name="BirthdayYear" id="namsinhcha" style="height: 45px; border-radius: 5px; width: calc(30%); font-size: 16px; opacity: 0.7; text-align: center;">
-                    <option value="-1">Năm:</option>
-                    <option value="2003">2003</option>
-                    <option value="2002">2002</option>
-                    <option value="2001">2001</option>
-                    <option value="2000">2000</option>
-                    <option value="1999">1999</option>
-                    <option value="1998">1998</option>
-                    <option value="1997">1997</option>
-                    <option value="1996">1996</option>
-                    <option value="1995">1995</option>
-                    <option value="1994">1994</option>
-                    <option value="1993">1993</option>
-                    <option value="1992">1992</option>
-                    <option value="1991">1991</option>
-                    <option value="1990">1990</option>
-                    <option value="1989">1989</option>
-                    <option value="1988">1988</option>
-                    <option value="1987">1987</option>
-                    <option value="1986">1986</option>
-                    <option value="1985">1985</option>
-                    <option value="1984">1984</option>
-                    <option value="1983">1983</option>
-                    <option value="1982">1982</option>
-                    <option value="1981">1981</option>
-                    <option value="1980">1980</option>
-                    </select>
-                </td>
-                </div>
-                <div class="input-box">
-                <span class="details">Nghề Nghiệp Cha</span>
-                <input type="text" id="txtnghenghiepcha" name="CMNDCCCD" placeholder="Nhập Nghề Nghiệp Cha" required>
-                </div>
-                <div class="input-box">
-                <span class="details">Họ và Tên Mẹ</span>
-                <input type="text" id="txttenme" name="name" placeholder="Nhập Họ Và Tên Mẹ" required>
-                </div>
-                <div class="input-box">
-                <span class="details">CMND/CCCD Mẹ</span>
-                <input type="text" id="txtcmndme" name="CMNDCCCD" placeholder="Nhập số CMND/CCCD" required>
-                </div>
-                <div class="input-box">
-                <span class="details">Ngày Tháng Năm Sinh Mẹ</span>
-                <td>
-                    <select name="BirthDay" id="ngaysinhme" style="height: 45px; border-radius: 5px; width: calc(100% / 3); font-size: 16px; opacity: 0.7; text-align: center;">
-                    <option value="-1">Ngày:</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-                    </select>
-                    <select name="BirthdayMonth" id="thangsinhme" style="height: 45px; border-radius: 5px; width: calc(100%/3); font-size: 16px; opacity: 0.7; text-align: center;">
-                    <option value="-1">Tháng:</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    </select>
-                        
-                    <select name="BirthdayYear" id="namsinhme" style="height: 45px; border-radius: 5px; width: calc(30%); font-size: 16px; opacity: 0.7; text-align: center;">
-                    <option value="-1">Năm:</option>
-                    <option value="2003">2003</option>
-                    <option value="2002">2002</option>
-                    <option value="2001">2001</option>
-                    <option value="2000">2000</option>
-                    <option value="1999">1999</option>
-                    <option value="1998">1998</option>
-                    <option value="1997">1997</option>
-                    <option value="1996">1996</option>
-                    <option value="1995">1995</option>
-                    <option value="1994">1994</option>
-                    <option value="1993">1993</option>
-                    <option value="1992">1992</option>
-                    <option value="1991">1991</option>
-                    <option value="1990">1990</option>
-                    <option value="1989">1989</option>
-                    <option value="1988">1988</option>
-                    <option value="1987">1987</option>
-                    <option value="1986">1986</option>
-                    <option value="1985">1985</option>
-                    <option value="1984">1984</option>
-                    <option value="1983">1983</option>
-                    <option value="1982">1982</option>
-                    <option value="1981">1981</option>
-                    <option value="1980">1980</option>
-                    </select>
-                </td>
-                </div>
-                <div class="input-box">
-                <span class="details">Nghề Nghiệp Mẹ</span>
-                <input type="text" id="txtnghenghiepme" name="CMNDCCCD" placeholder="Nghề Nghiệp Mẹ" required>
-                </div>
-                <div style="width: 100%; text-align: center; margin-top: 10px;">
-                <button type="button" class="btn_gui" id="btn_gui">Gửi</button>
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100" style="font-family:'Bitter', serif">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title" style="color: black;">Thông Tin Cá Nhân</h2>
+                    <form method="POST">
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Họ Và Tên" name="name">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3 js-datepicker" type="text" placeholder="Ngày Sinh" name="birthday">
+                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar" style="color: black;"></i>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="gender">
+                                    <option disabled="disabled" selected="selected">Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Email" name="email">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
+                        </div>
+                        <div class="p-t-10 tieptheo">
+                            <Div class="tieptheochu">Tiếp Theo</Div><div><i class='bx bx-right-arrow-alt tieptheoicon'></i></Div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            </form>
         </div>
-    </div>
-        </section>
     </div>
     <!-- Form Đăng Kí End  -->
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" style="position: static; float:left;" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-light footer pt-5  wow fadeIn" style="position: static; float:left; margin-top: 0px;" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
@@ -511,8 +130,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Liên Hệ</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Số 2 - Đường Trường Sa - P.17 - Q.Bình Thạnh - Tp.Hồ Chí Minh</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(+84) 2838400532</p>
+                    <p class="mb-2"><i class='bx bx-map' style="margin-right: 10px;"></i>Số 2 - Đường Trường Sa - P.17 - Q.Bình Thạnh - Tp.Hồ Chí Minh</p>
+                    <p class="mb-2"><i class='bx bx-phone-call' style="margin-right: 10px;"></i>(+84) 2838400532</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>phanhieu@tlu.edu.vn</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/groups/daihocthuyloicoso2/"><i class="fab fa-facebook-f"></i></a>
@@ -579,9 +198,15 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
 </body>
 
 </html>
