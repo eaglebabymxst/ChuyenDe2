@@ -1,0 +1,3 @@
+$(".dangnhap").on('click',function () {
+    
+})

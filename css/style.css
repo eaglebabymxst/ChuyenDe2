@@ -172,7 +172,7 @@ body{
 
 .header-carousel .owl-nav {
     position: absolute;
-    bottom: 30%;
+    bottom: 13%;
     right: 1%;
     transform: translateY(-50%);
     display: flex;

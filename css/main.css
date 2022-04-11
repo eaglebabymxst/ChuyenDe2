@@ -344,25 +344,24 @@ input {
 .input--style-3 {
   padding: 5px 0;
   font-size: 16px;
-  color: black;
   background: transparent;
 }
 
 .input--style-3::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: black;
+
 }
 
 .input--style-3:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: black;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .input--style-3::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: black;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .input--style-3:-ms-input-placeholder {
@@ -400,6 +399,7 @@ input {
   color: black;
   font-size: 16px;
   font-family: inherit;
+
 }
 
 .rs-select2 .select2-container .select2-selection--single .select2-selection__arrow {
