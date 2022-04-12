@@ -8,7 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Roboto+Serif:ital@1&display=swap');
 body{
     font-family: 'Bitter', serif;
-}   
+}  
+::-webkit-scrollbar { 
+  display: none; 
+}
 .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -482,7 +485,7 @@ input {
 }
 
 .card-3 {
-  background: rgb(79, 226, 214);
+  background: rgb(111, 248, 237);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -536,11 +539,11 @@ input {
     color: black;
     font-weight: 900;
 }
-.tieptheo:hover .tieptheochu{
+/* .tieptheo:hover .tieptheochu{
     color: rgb(90, 21, 84);
     transition: 0.5s;
 }
 .tieptheo:hover .tieptheoicon{
   color:  rgb(90, 21, 84);
   transition: 0.5s;
-}
+} */
