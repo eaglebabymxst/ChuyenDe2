@@ -1,0 +1,80 @@
+.thongtin{
+    height: 85%;
+    width: 50%;
+    background-color: white;
+    position: fixed;
+    border-radius: 10px;
+    top: 10%;
+    right: 25%;
+    overflow: scroll;
+}
+.thongtin1{
+    position: relative;
+    margin: 20px 35px 10px;
+}
+.head{
+    display: inline;
+}
+.hr1{
+    height: 20px;
+    background-color: rgb(32, 196, 155);
+    float: left;
+    position: relative;
+    width: 69%;
+    margin-left: 10px;
+}
+.thongtincanhan{
+    position: absolute;
+    margin-top: 10px;
+    width: fit-content;
+    text-align: center;
+    float: left;
+    position: relative;
+    color: rgb(32, 196, 155);
+    padding: 0px 5px;
+}
+.hr2{
+    height: 20px;
+    background-color: rgb(32, 196, 155);
+    width: 5%;
+    margin-right: 5px;
+    position: relative;
+    float: left;
+}
+.FileAnhChanDung{
+    position: absolute;
+    top: 80px;
+    right: 70px;
+}
+.hovaten{
+    position: relative;
+    font-size: 30px;
+    left: 35px;
+    top: 10px;
+    color: rgb(32, 196, 155);
+}
+.thongtin1{
+    font-size: 18px;
+    display: inline-block;
+}
+.thongtin1 div{
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+}
+.thongtin1{
+    font-size: 18px;
+    display: inline-block;
+}
+.thongtin1 div i{
+    font-size: 30px;
+    color: rgb(32, 196, 155);
+    margin-right: 10px;
+}
+.lilich{
+    margin-left: 40px;
+}
+.lilich div{
+    margin-bottom: 10px;
+    font-size: 18px;
+}

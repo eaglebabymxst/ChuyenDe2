@@ -46,13 +46,13 @@ body{
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     transition: .5s;
+    height: auto;
 }
 
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
 }
-
 .btn-square {
     width: 38px;
     height: 38px;

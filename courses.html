@@ -37,6 +37,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/showPreview.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -51,7 +52,7 @@
 
 
     <!-- Navbar Start -->
-    <nav style="font-weight: 900; font-family: 'Bitter', serif;" class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <nav style="font-weight: 900; font-family: 'Bitter', serif; height: 50px;" class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>TLUS</h2>
         </a>
@@ -73,8 +74,8 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Liên Hệ</a>
             </div>
-            <div class="dangnhap">
-                <span class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" style="font-family: 'Bitter', serif;">Đăng Nhập<i class="fa fa-arrow-right ms-3"></i></span>
+            <div class="dangnhap" style="margin-right: 10px;">
+                <span class="btn btn-primary py-2 px-lg-5 d-none d-lg-block" style="font-family: 'Bitter', serif;">Đăng Nhập<i class="fa fa-arrow-right ms-3"></i></span>
             </div>    
         </div>
     </nav>
@@ -197,17 +198,17 @@
                           </div>
 
                           <div class="input-group">
-                            <input type="text" id="txtnghenghiepcha" class="input--style-3" name="" placeholder="Nhập Nghề Nghiệp Cha" required>
+                            <input type="text" id="txtnghenghiepcha" class="input--style-3" name="" placeholder="Nghề Nghiệp" required>
                           </div>
                           <div class="input-group">
                             <input type="text" id="txttenme" class="input--style-3" name="name" placeholder="Nhập Họ Và Tên Mẹ" required>
                           </div>
                           <div class="input-group">
-                            <input type="text" id="txtcmndme" class="input--style-3" name="" placeholder="Nhập số CMND/CCCD" required>
+                            <input type="text" id="txtcmndme" class="input--style-3" name="" placeholder="CMND/CCCD" required>
                           </div>
 
                           <div class="input-group">
-                            <input type="text" id="txtnghenghiepme" class="input--style-3" name="" placeholder="Nghề Nghiệp Mẹ" required>
+                            <input type="text" id="txtnghenghiepme" class="input--style-3" name="" placeholder="Nghề Nghiệp" required>
                           </div>
                           <div class="p-t-10 tieptheo">
                             <Div class="tieptheochu guiform">Gửi</Div><div><i class='bx bx-right-arrow-alt tieptheoicon'></i></Div>
@@ -293,6 +294,108 @@
         <button class="btn_close">Đóng</button>
     </div>
     <!-- Form Login End -->
+    <!-- Form Xác Nhận Start-->
+    <form class="thongtin is-hidden">
+        <div class="head">
+            <hr class="hr1">
+            <div class="thongtincanhan">Thông Tin Cá Nhân</div>
+            <hr class="hr2">
+        </div>
+        <div class="FileAnhChanDung">
+            <img src="img/FileAnh2.jpg" alt="" srcset="" width="180px" height="180px">
+        </div>
+        <div class="hovaten">
+            Huỳnh Duy Khánh
+        </div>
+        <br>
+        <div class="thongtin1">
+            <div class="cmnd">
+                <div class="icon"><i class='bx bx-credit-card-front'></i></div>
+                <div class="CMND1">CMND/CCCD</div>
+                <div class="CMND1"></div>
+                
+            </div>
+            <div class="ngaysinh">
+                <div class="icon"><i class='bx bx-cake'></i></div>
+                <div>Ngày Sinh: </div>
+                <div class="ngaysinh">12/03/2000</div>
+                
+            </div>
+            <div class="quoctich">
+                <div class="icon"><i class='bx bxs-star'></i></div>
+                <div>Quốc Tịch</div>
+                <div class="quoctich"></div>
+                
+            </div>
+            <div class="gioitinh">
+                <div class="icon"><i class='bx bx-male-female'></i></div>
+                <div>Giới Tính:</div>
+                <div class="gioitinh"></div>
+                
+            </div>
+            <div class="mail">
+                <div class="icon"><i class='bx bx-envelope' ></i></div>
+                <div>Email:</div>
+                <div class="mail"></div>
+                
+            </div>
+            <div class="sdt">
+                <div class="icon"><i class='bx bx-phone-call' ></i></div>
+                <div>Số Điện Thoại:</div>
+                <div class="sdt"></div>
+                
+            </div>
+            <div class="diachi">
+                <div class="icon"><i class='bx bx-map' ></i></div>
+                <div class="diachi">Địa Chỉ:</div>
+                <div class="diachi"></div>   
+            </div>
+        </div>
+        <div style="color:rgb(32, 196, 155);font-size: 25px; margin-left: 25px; margin-bottom: 10px;">Thông Tin Lý Lịch</div>
+        <div class="lilich">
+            <div class="hotencha">
+                <div>Họ Và Tên Cha:</div>
+                <div></div>
+            </div>
+            <div class="cmndcha">
+                <div>CMND:</div>
+                <div></div>
+            </div>
+            <div class="nghenghiepcha">
+                Nghề Nghiệp:
+            </div>
+            <div class="hotenme">
+                Họ Và Tên Mẹ:
+            </div>
+            <div class="cmndme">
+                CMND:
+            </div>
+            <div class="nghenghiepme">
+                Nghề Nghiệp:
+            </div>
+        </div>
+        <div class="anh">
+            <div class="cmndtrc">
+                <img src="" alt="">
+            </div>
+            <div class="cmndsau">
+                <img src="" alt="">
+            </div>
+            <div class="bangtn">
+                <img src="" alt="">
+            </div>
+            <div class="theduthi">
+                <img src="" alt="">
+            </div>
+            <div class="bangdiem">
+                <img src="" alt="">
+            </div>
+            <div class="nvqs">
+                <img src="" alt="" srcset="">
+            </div>
+        </div>        
+    </form>
+    <!-- Form Xác Nhận End -->
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
