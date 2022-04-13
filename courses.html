@@ -210,9 +210,10 @@
                           <div class="input-group">
                             <input type="text" id="txtnghenghiepme" class="input--style-3" name="" placeholder="Nghề Nghiệp" required>
                           </div>
-                          <div class="p-t-10 tieptheo">
-                            <Div class="tieptheochu guiform">Gửi</Div><div><i class='bx bx-right-arrow-alt tieptheoicon'></i></Div>
-                        </div>
+                            <div class="p-t-10">
+                                <div style="position: static; float: left; margin-right: 30px;" class="tvformcuoi"><div style="float: left;"><i class='bx bx-left-arrow-alt tieptheoicon' style="margin-right: 10px;"></i></Div><Div class="tieptheochu tvformcuoi">Trở Về</Div></div>
+                                <div class="guiform"><Div class="tieptheochu">Gửi</Div><div><i class='bx bx-right-arrow-alt tieptheoicon'></i></Div></div>
+                            </div>    
                     </form>
                 </div>
             </div>
@@ -295,11 +296,9 @@
     </div>
     <!-- Form Login End -->
     <!-- Form Xác Nhận Start-->
-    <form class="thongtin is-hidden">
-        <div class="head">
-            <hr class="hr1">
-            <div class="thongtincanhan">Thông Tin Cá Nhân</div>
-            <hr class="hr2">
+    <div class="thongtin is-hidden">
+        <div class="headd">
+            <hr><span>Thông Tin Đăng Kí</span><hr>
         </div>
         <div class="FileAnhChanDung">
             <img src="img/FileAnh2.jpg" alt="" srcset="" width="180px" height="180px">
@@ -374,27 +373,38 @@
                 Nghề Nghiệp:
             </div>
         </div>
+        <h3 style="margin-left: 30px; color: rgb(32, 196, 155);">Ảnh</h3>
         <div class="anh">
             <div class="cmndtrc">
-                <img src="" alt="">
+                <div>Ảnh CMND/CCCD Mặt Trước</div>
+                <img src="img/FileAnh1.jpg" alt="Chưa Để Ảnh Vào">
             </div>
             <div class="cmndsau">
-                <img src="" alt="">
+                <div>Ảnh CMND/CCCD Mặt Sau</div>
+                <img src="" alt="Chưa Để Ảnh Vào">
             </div>
             <div class="bangtn">
-                <img src="" alt="">
+                <div>Ảnh Bằng Tốt Nghiệp</div>
+                <img src="" alt="Chưa Để Ảnh Vào">
             </div>
             <div class="theduthi">
-                <img src="" alt="">
+                <div>Ảnh Thẻ Dự Thi</div>
+                <img src="" alt="Chưa Để Ảnh Vào">
             </div>
             <div class="bangdiem">
-                <img src="" alt="">
+                <div>Ảnh Bảng Điểm</div>
+                <img src="" alt="Chưa Để Ảnh Vào">
             </div>
             <div class="nvqs">
-                <img src="" alt="" srcset="">
+                <div>Ảnh Giấy Xác Nhận Nghĩa Vụ Quân Sự</div>
+                <img src="" alt="Chưa Để Ảnh Vào">
             </div>
-        </div>        
-    </form>
+        </div> 
+        <div class="buttonn">
+            <button class="xacnhan" >Xác Nhận</button>
+            <button class="lamlai" >Làm Lại</button> 
+        </div>  
+    </div>
     <!-- Form Xác Nhận End -->
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -417,6 +427,7 @@
     <!-- Main JS-->
     <script src="js/global.js"></script>
     <script src="js/jsdangnhap.js"></script>
+    <script src="js/jsFormNhapTT.js"></script>
 </body>
 
 </html>

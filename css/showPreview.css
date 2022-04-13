@@ -12,34 +12,27 @@
     position: relative;
     margin: 20px 35px 10px;
 }
-.head{
-    display: inline;
-}
-.hr1{
-    height: 20px;
-    background-color: rgb(32, 196, 155);
-    float: left;
+.headd{
+    padding: 10px;
+    align-items: center;
     position: relative;
-    width: 69%;
-    margin-left: 10px;
-}
-.thongtincanhan{
-    position: absolute;
-    margin-top: 10px;
-    width: fit-content;
     text-align: center;
-    float: left;
+}
+.headd hr{
+    display: inline-block;
+    text-align: justify;
+    margin-bottom: 4px;
+    padding-top: 3px;
+    color: rgb(32, 196, 155);
+    width: 30%;
+    height: 5px;
+}
+.headd span{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
     position: relative;
     color: rgb(32, 196, 155);
-    padding: 0px 5px;
-}
-.hr2{
-    height: 20px;
-    background-color: rgb(32, 196, 155);
-    width: 5%;
-    margin-right: 5px;
-    position: relative;
-    float: left;
 }
 .FileAnhChanDung{
     position: absolute;
@@ -49,13 +42,14 @@
 .hovaten{
     position: relative;
     font-size: 30px;
-    left: 35px;
+    left: 55px;
     top: 10px;
     color: rgb(32, 196, 155);
 }
 .thongtin1{
     font-size: 18px;
     display: inline-block;
+    margin-top: 10px;
 }
 .thongtin1 div{
     display: flex;
@@ -77,4 +71,37 @@
 .lilich div{
     margin-bottom: 10px;
     font-size: 18px;
+}
+.anh{
+    margin-left: 40px;
+}
+.anh img{
+    height: 380px;
+    width: 550px;
+}
+.anh div div{
+    font-size: 18px;
+    color: rgb(32, 196, 155);
+}
+.anh div img{
+    color: red;
+}
+.thongtin button{
+	width: 100px;
+	height: 40px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border:none;
+	background-color: rgb(89, 224, 224);
+	color: white;
+	margin-top: 5px;
+	color: black;
+}
+.thongtin button:hover{
+	text-align: center;
+	width: 150px;
+	transition: 0.5s;
+}
+.buttonn{
+    text-align: center;
 }

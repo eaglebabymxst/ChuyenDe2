@@ -11,10 +11,16 @@
 	border-radius: 10px;
 	text-align: center;
 	margin: 50px auto;
-	background-color: rgb(9, 9, 44);
+}
+.login{
+	background: -webkit-gradient(linear, left bottom, left top, from(#a18cd1), to(#fbc2eb));
+	background: -webkit-linear-gradient(bottom, #a18cd1 0%, #fbc2eb 100%);
+	background: -moz-linear-gradient(bottom,  #a18cd1 0%, #fbc2eb 100%);
+	background: -o-linear-gradient(bottom,  #a18cd1 0%, #fbc2eb 100%);
+	background: linear-gradient(to top,  #a18cd1 0%, #fbc2eb 100%);
 }
 h2{
-	color:rgb(89, 224, 224);
+	color:rgb(42, 30, 150);
 	font-family: sans-serif;
 	margin-bottom: 30px;
 	margin-top: 15px;
