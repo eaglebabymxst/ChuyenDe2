@@ -91,24 +91,24 @@
                     <h2 class="title" style="color: black;">Thông Tin Cá Nhân</h2>
                     <form method="POST" class="formThongTin">
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Họ Và Tên" name="name">
+                            <input class="input--style-3 txtten" type="text" placeholder="Họ Và Tên" name="name" >
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Số Căng Cước Công Dân" name="name">
+                            <input class="input--style-3 txtcmnd" type="text" placeholder="Số Căng Cước Công Dân" name="name">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Quốc Tịch" name="name">
+                            <input class="input--style-3 txtquoctich" type="text" placeholder="Quốc Tịch" name="name">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Địa Chỉ" name="name">
+                            <input class="input--style-3 txtdiachi" type="text" placeholder="Địa Chỉ" name="name">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3 js-datepicker" type="text" placeholder="Ngày Sinh" name="birthday" id="ngaysinh">
+                            <input class="input--style-3 js-datepicker txtngaysinh" type="text" placeholder="Ngày Sinh" name="birthday">
                             <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar" style="color: black; opacity: 0.5;"></i>
                         </div>
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
+                                <select name="gender" class="txtgioitinh">
                                     <option disabled="disabled" selected="selected">Giới Tính</option>
                                     <option>Nam</option>
                                     <option>Nữ</option>
@@ -118,10 +118,10 @@
                             </div>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Email" name="email">
+                            <input class="input--style-3 txtmail" type="email" placeholder="Email" name="email">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
+                            <input class="input--style-3 txtsdt" type="text" placeholder="Phone" name="phone">
                         </div>
                         <div class="p-t-10">
                             <Div class="tieptheochu ttformtt">Tiếp Theo</Div><div><i class='bx bx-right-arrow-alt tieptheoicon'></i></Div>
@@ -130,15 +130,15 @@
                     <form method="POST" class="formAnh is-hidden">
                         <div class="input-box" style="margin-top: 10px;">
                             <span class="details">Ảnh Chân Dung</span>
-                            <input class="" type="file" id="chandung">
+                            <input class="" type="file" id="chandung" alt="Chưa để Chọn Ảnh" onclick="show('chandung')">
                             <div class="col-sm-2 is-hidden chandung">
-                              <img src="" id="imgPreviewchandung" accept="images/*">
-                              <i class="fa fa-trash " onclick="DeleteFileAnh('chandung')" ></i>
+                              <img src="" id="imgPreviewchandung" height="30px" width="30px">
+                              <i class="fa fa-trash" onclick="DeleteFileAnh('chandung')" ></i>
                             </div>
                           </div>
                         <div class="input-box" style="margin-top: 10px;">
                           <span class="details">Ảnh CMND/CCCD (Mặt trước)</span>
-                          <input class="" type="file" id="cmndtrc">
+                          <input class="" type="file" id="cmndtrc" onclick="show('cmndtrc')">
                           <div class="col-sm-2 cmndtrc is-hidden">
                             <img src="" id="imgPreviewcmndtrc" width="50px" height="50px" accept="images/*">
                             <i class="fa fa-trash " onclick="DeleteFileAnh('cmndtrc')"></i>
@@ -146,15 +146,15 @@
                         </div>
                       <div class="input-box"style="margin-top: 10px;">
                             <span class="details">Ảnh CMND/CCCD (Mặt sau)</span>
-                            <input class="file-upload-input" type="file" id="cmndsau">
+                            <input class="file-upload-input" type="file" id="cmndsau" onclick="show('cmndsau')">
                             <div class="col-sm-2 cmndsau is-hidden">
                               <img src="" id="imgPreviewcmndsau" width="50px" height="50px"  accept="images/*">
                               <i class="fa fa-trash" onclick="DeleteFileAnh('cmndsau')"></i>
                             </div>
                       </div>
-                      <div class="input-box" style="margin-top: 10px;">
+                      <div class="input-box" style="margin-top: 10px;" >
                         <span class="details">Ảnh Bằng Tốt Nghiệp (Gốc / Tạm thời)</span>
-                        <input class="file-upload-input " type="file" id="bangtn" name="myfile">
+                        <input class="file-upload-input " type="file" id="bangtn" name="myfile" onclick="show('bangtn')">
                         <div class="col-sm-2 bangtn is-hidden">
                           <img src="" id="imgPreviewbangtn" width="50px" height="50px">
                           <i class="fa fa-trash" onclick="DeleteFileAnh('bangtn')" accept="images/*"></i>
@@ -162,7 +162,7 @@
                       </div>
                     <div class="input-box" style="margin-top: 10px;">
                         <span class="details">Ảnh Thẻ Dự Thi</span>
-                        <input class="file-upload-input " type="file" id="theduthi" name="myfile">
+                        <input class="file-upload-input " type="file" id="theduthi" name="myfile" onclick="show('theduthi')">
                         <div class="col-sm-2 theduthi is-hidden">
                           <img src="" id="imgPreviewtheduthi" width="50px" height="50px" accept="images/*">
                           <i class="fa fa-trash" onclick="DeleteFileAnh('theduthi')" ></i>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="input-box"style="margin-top: 10px;">
                         <span class="details">Ảnh Bảng Điểm</span>
-                        <input class="file-upload-input " type="file" id="bangdiem" name="myfile">
+                        <input class="file-upload-input " type="file" id="bangdiem" name="myfile"  onclick="show('bangdiem')" >
                         <div class="col-sm-2 bangdiem is-hidden">
                           <img src="" id="imgPreviewbangdiem" width="50px" height="50px" accept="images/*">
                           <i class="fa fa-trash" onclick="DeleteFileAnh('bangdiem')" ></i>
@@ -178,7 +178,7 @@
                     </div>
                     <div class="input-box"style="margin-top: 10px;">
                       <span class="details">Ảnh Giấy chứng nhận nghĩa vụ quân sự do ban CHQS cấp</span>
-                      <input class="file-upload-input " type="file" id="nvqs" name="myfile">
+                      <input class="file-upload-input " type="file" id="nvqs" name="myfile" onclick="show('nvqs')">
                       <div class="col-sm-2 nvqs is-hidden">
                         <img src="" id="imgPreviewnvqs" width="50px" height="50px" accept="images/*">
                         <i class="fa fa-trash" onclick="DeleteFileAnh('nvqs')"></i>
@@ -301,108 +301,109 @@
             <hr><span>Thông Tin Đăng Kí</span><hr>
         </div>
         <div class="FileAnhChanDung">
-            <img src="img/FileAnh2.jpg" alt="" srcset="" width="180px" height="180px">
+            <img src="" alt="" srcset="" id="FileAnhchandung" width="180px" height="180px">
         </div>
-        <div class="hovaten">
-            Huỳnh Duy Khánh
+        <div id="hovaten">
+            Chưa Nhập
         </div>
         <br>
         <div class="thongtin1">
             <div class="cmnd">
                 <div class="icon"><i class='bx bx-credit-card-front'></i></div>
-                <div class="CMND1">CMND/CCCD</div>
-                <div class="CMND1"></div>
-                
+                <div>CMND/CCCD</div>
+                <div id="CMND">Chưa Nhập</div>
             </div>
             <div class="ngaysinh">
                 <div class="icon"><i class='bx bx-cake'></i></div>
                 <div>Ngày Sinh: </div>
-                <div class="ngaysinh">12/03/2000</div>
-                
+                <div id="ngaysinh">Chưa Nhập</div>
             </div>
             <div class="quoctich">
                 <div class="icon"><i class='bx bxs-star'></i></div>
                 <div>Quốc Tịch</div>
-                <div class="quoctich"></div>
-                
+                <div id="quoctich">Chưa Nhập</div>
             </div>
             <div class="gioitinh">
                 <div class="icon"><i class='bx bx-male-female'></i></div>
                 <div>Giới Tính:</div>
-                <div class="gioitinh"></div>
+                <div id="gioitinh">Chưa Nhập</div>
                 
             </div>
             <div class="mail">
                 <div class="icon"><i class='bx bx-envelope' ></i></div>
                 <div>Email:</div>
-                <div class="mail"></div>
+                <div id="mail">Chưa Nhập</div>
                 
             </div>
             <div class="sdt">
                 <div class="icon"><i class='bx bx-phone-call' ></i></div>
                 <div>Số Điện Thoại:</div>
-                <div class="sdt"></div>
+                <div id="sdt">Chưa Nhập</div>
                 
             </div>
             <div class="diachi">
                 <div class="icon"><i class='bx bx-map' ></i></div>
-                <div class="diachi">Địa Chỉ:</div>
-                <div class="diachi"></div>   
+                <div>Địa Chỉ:</div>
+                <div id="diachi">Chưa Nhập</div>   
             </div>
         </div>
         <div style="color:rgb(32, 196, 155);font-size: 25px; margin-left: 25px; margin-bottom: 10px;">Thông Tin Lý Lịch</div>
         <div class="lilich">
             <div class="hotencha">
                 <div>Họ Và Tên Cha:</div>
-                <div></div>
+                <div id="tencha">Chưa Nhập</div>
             </div>
             <div class="cmndcha">
                 <div>CMND:</div>
-                <div></div>
+                <div id="cmndcha">Chưa Nhập</div>
             </div>
             <div class="nghenghiepcha">
-                Nghề Nghiệp:
+                <div>Nghề Nghiệp:</div>
+                <div id="nghenghiepcha">Chưa Nhập</div>
             </div>
             <div class="hotenme">
-                Họ Và Tên Mẹ:
+                <div>Họ Và Tên Mẹ:</div>
+                <div id="tenme">Chưa Nhập</div>
             </div>
             <div class="cmndme">
-                CMND:
+                <div>CMND:</div>
+                <div id="cmndme">Chưa Nhập</div>
             </div>
             <div class="nghenghiepme">
-                Nghề Nghiệp:
+                <div>Nghề Nghiệp:</div>
+                <div id="nghenghiepme">Chưa Nhập</div>
             </div>
         </div>
         <h3 style="margin-left: 30px; color: rgb(32, 196, 155);">Ảnh</h3>
         <div class="anh">
-            <div class="cmndtrc">
+            <div id="cmndtrc">
                 <div>Ảnh CMND/CCCD Mặt Trước</div>
-                <img src="img/FileAnh1.jpg" alt="Chưa Để Ảnh Vào">
+                <img src="" id="FileAnhcmndtrc" alt="Chưa Để Ảnh Vào">
             </div>
-            <div class="cmndsau">
+            <div id="cmndsau">
                 <div>Ảnh CMND/CCCD Mặt Sau</div>
-                <img src="" alt="Chưa Để Ảnh Vào">
+                <img src="" id="FileAnhcmndsau" alt="Chưa Để Ảnh Vào">
             </div>
-            <div class="bangtn">
+            <div id="bangtn">
                 <div>Ảnh Bằng Tốt Nghiệp</div>
-                <img src="" alt="Chưa Để Ảnh Vào">
+                <img src="" id="FileAnhbangtn" alt="Chưa Để Ảnh Vào">
             </div>
-            <div class="theduthi">
+            <div id="theduthi">
                 <div>Ảnh Thẻ Dự Thi</div>
-                <img src="" alt="Chưa Để Ảnh Vào">
+                <img src="" id="FileAnhtheduthi" alt="Chưa Để Ảnh Vào">
             </div>
-            <div class="bangdiem">
+            <div id="bangdiem">
                 <div>Ảnh Bảng Điểm</div>
-                <img src="" alt="Chưa Để Ảnh Vào">
+                <img src="" alt="Chưa Để Ảnh Vào" id="FileAnhbangdiem">
             </div>
-            <div class="nvqs">
+            <div id="nvqs">
                 <div>Ảnh Giấy Xác Nhận Nghĩa Vụ Quân Sự</div>
-                <img src="" alt="Chưa Để Ảnh Vào">
+                <img src="" alt="Chưa Để Ảnh Vào" id="FileAnhnvqs">
             </div>
         </div> 
         <div class="buttonn">
             <button class="xacnhan" >Xác Nhận</button>
-            <button class="lamlai" >Làm Lại</button> 
+            <button class="lamlai" >Sửa Lại</button> 
         </div>  
     </div>
     <!-- Form Xác Nhận End -->
@@ -428,7 +429,7 @@
     <script src="js/global.js"></script>
     <script src="js/jsdangnhap.js"></script>
     <script src="js/jsFormNhapTT.js"></script>
-    <script src="js/XuatPDF.js"></script>
+    <script src="js/XuatPDF.js" type="module"></script>
     <script src="https://unpkg.com/jspdf@1.5.3/dist/jspdf.min.js"></script>
 </body>
 

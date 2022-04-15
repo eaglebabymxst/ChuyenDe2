@@ -39,7 +39,7 @@
     top: 80px;
     right: 70px;
 }
-.hovaten{
+#hovaten{
     position: relative;
     font-size: 30px;
     left: 55px;
@@ -79,9 +79,15 @@
     height: 380px;
     width: 550px;
 }
+.anh div{
+   text-align:  center;
+}
+
 .anh div div{
     font-size: 18px;
     color: rgb(32, 196, 155);
+    text-align: left;
+    font-weight: bold;
 }
 .anh div img{
     color: red;
