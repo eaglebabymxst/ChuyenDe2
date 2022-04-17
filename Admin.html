@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>eLEARNING - eLearning HTML Template</title>
+    <title>Đại Học Thủy Lợi</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -63,7 +63,7 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Liên Hệ</a>
             </div>
-            <div class="dangnhap" style="margin-right: 10px;">
+            <div class="dangxuat" style="margin-right: 10px;">
                 <span class="btn btn-primary py-2 px-lg-5 d-none d-lg-block" style="font-family: 'Bitter', serif;">Đăng Xuất<i class="fa fa-arrow-right ms-3"></i></span>
             </div>    
         </div>
@@ -77,9 +77,9 @@
                 
             </ul>
             <div class="foot">
-                <div><input type="text" class="form-control border-0 w-100 py-2 ps-4 pe-4" style="border-radius: 5px;" placeholder="Lý Do Không Duyệt"></div>
-                <button class="duyet">Duyệt</button>
-                <button class="khongduyet">Không Duyệt</button>
+                <div><input type="text" class="form-control border-0 w-100 py-2 ps-4 pe-4 txtlydo" style="border-radius: 5px;" placeholder="Lý Do Không Duyệt"></div>
+                <button id="duyet">Duyệt</button>
+                <button id="khongduyet">Không Duyệt</button>
             </div>
         </div>
         <div class="Adright">
@@ -90,6 +90,7 @@
         </div>
     </div>
     <!-- AdminEnd -->
+    <!-- FooterStart -->
     <div class="container-fluid bg-dark text-light footer pt-5  wow fadeIn" style="position: static; float:left; margin-top: 0px;" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
@@ -154,6 +155,8 @@
             </div>
         </div>
     </div>
+    <!-- Footerend -->
+    
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -166,12 +169,13 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/pdfobject.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
     <script src="js/ReadFilePDF.js"></script>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="js/SendMail.js"></script> -->
+    <script src="js/admin.js"></script>
 </body>
 
 </html>

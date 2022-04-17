@@ -46,13 +46,13 @@
 	margin-top: 5px;
 	color: black;
 }
-.foot .duyet:hover{
+.foot #duyet:hover{
 	text-align: center;
 	width: 150px;
 	transition: .8s;
     background-color:springgreen;
 }
-.foot .khongduyet:hover{
+.foot #khongduyet:hover{
 	text-align: center;
 	width: 140px;
 	transition: .8s;
@@ -70,4 +70,7 @@
 .danhsachsinhvien{
     height: 500px;
     overflow: scroll;
+}
+.active{
+    color: rgb(59, 164, 239);
 }

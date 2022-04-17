@@ -35,10 +35,9 @@ $(".xacnhan").on('click',function () {
     doc.setFont("time");
     doc.setFontSize(20);
     doc.setTextColor(0, 0, 255);
-    doc.text(30, 20, '------ Hồ sơ đăng ký nhập học ------');
-    doc.setTextColor(0, 0, 255);
+    doc.text(30, 20, '------ HỒ SƠ ĐĂNG KÍ NHẬP HỌC ------');
     doc.setFontSize(18);
-    doc.setTextColor(0, 255, 0);
+    doc.setTextColor(0, 0, 0);
     doc.text(10, 40, 'Thông tin cá nhân');
     doc.addImage(chandung,130,40,60,60);
     doc.setFontSize(16);
@@ -53,7 +52,7 @@ $(".xacnhan").on('click',function () {
     doc.text(20, 105+20, 'Địa chỉ: '+diachi);
 
     doc.setFontSize(18);
-    doc.setTextColor(0, 255, 0);
+    doc.setTextColor(0, 0, 0);
     doc.text(10, 115+20, 'Thông tin lý lịch: ');
     doc.setFontSize(16);
     doc.setTextColor(0, 0, 0);
@@ -65,7 +64,7 @@ $(".xacnhan").on('click',function () {
     doc.text(20, 175+20, 'Nghề nghiệp: '+nghenghiepme);
     doc.addPage();
     doc.setFontSize(22);
-    doc.setTextColor(0, 255, 0);
+    doc.setTextColor(0, 0, 0);
     doc.text(10, 20, 'Ảnh hồ sơ: ');
     doc.setFontSize(16);
     doc.setTextColor(0, 0, 0);

@@ -30,7 +30,6 @@ switch ($event) {
         $username=$_POST['username'];
         $pass=$_POST['pass'];
         $sql="update `users` set password='$pass' where username='".$username."'";
-            
             if (mysqli_query($conn,$sql)) {
                 if(mysqli_affected_rows($conn)>0){
                     $res[$event] = 1;
@@ -86,6 +85,29 @@ switch ($event) {
             $jsondata['items']  = $mang ;
             echo json_encode($jsondata);
         }
+        mysqli_close($conn);
+        break;
+    case "deletePDF":
+        $filelinkpdf=$_POST['NamePDF'];
+        $sql = "DELETE FROM `user` WHERE idPDF = '".$filelinkpdf."'";      
+        if (mysqli_query($conn, $sql)) {
+                $res["success"] = 1; 
+        }
+        else{
+            $res["success"] = 0;
+        }
+        if($filelinkpdf==""){
+            $res["success"] = 1;
+        }else{
+            $filelinkpdf="../uploadFile/".$filelinkpdf.".pdf";
+        if(unlink($filelinkpdf)){
+                $res["success"] = 1;
+            }else{
+                $res["success"] = 2;//file not exsit
+            }
+        }
+        
+        echo json_encode($res);
         mysqli_close($conn);
         break;
 }

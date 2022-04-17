@@ -28,18 +28,10 @@ h2{
 .login .txtpass, .txtemail {
 	width: 200px;
 	height: 40px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	border-radius: 5px;
 	border: 1px solid grey;
 	padding-left: 20px;
-}
-.nhomatkhau{
-	display: inline-block;
-	height: 30px;
-}
-#remember{
-	width: fit-content;
-	margin-right: 10px;
 }
 .login button{
 	width: 100px;
@@ -59,4 +51,14 @@ h2{
 }
 .is-hidden{
 	display: none;
+}
+.btn_login:hover{
+	background-color: rgb(27, 255, 27);
+}
+.btn_close:hover{
+	background-color: red;
+}
+.nut div:hover{
+	color: blue;
+	transition: 0.5s;
 }

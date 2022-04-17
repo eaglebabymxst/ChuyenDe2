@@ -1,14 +1,4 @@
 $(document).ready(function () {
-    var myUser=JSON.parse(localStorage.getItem("userbookstore"));
-    console.log(myUser);
-    console.log(localStorage.getItem("rememberbookstore"));
-    if(myUser!=null ||myUser!=undefined){
-            var r=	localStorage.getItem("rememberbookstore");	 
-            if(r=="true"){
-                $(".txtemail").val(localStorage.getItem("usernamebookstore"));
-                $(".txtpass").val(localStorage.getItem("passwordbookstore"));
-            }
-    }
     $(".dangnhap").on('click',function () {
         $(".login").removeClass("is-hidden");
         $(".btn_login").click(function() {
@@ -29,14 +19,9 @@ $(document).ready(function () {
                             queryData("./php/uploadDatabase.php", datasend , function (data) {		
                                 console.log(data.items);
                                  if(data.success == 1){						
-                                        if ($(".remember").is(':checked')) {
-                                            localStorage.setItem("rememberbookstore", true);
-                                        }else{
-                                            localStorage.removeItem("rememberbookstore");
-                                        }
-                                        localStorage.setItem("usernamebookstore", username);
-                                        localStorage.setItem("passwordbookstore", pass);
-                                        location.href="Admin.html";	
+                                    localStorage.setItem("user", username);
+                                    localStorage.setItem("pass", pass);
+                                    location.href="Admin.html";	
                                  }else
                                  {
                                      alert("Tài khoản chưa đúng");
