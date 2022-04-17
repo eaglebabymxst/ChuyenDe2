@@ -374,6 +374,9 @@ body{
 
 
 /*** Footer ***/
+.footer{
+    position: relative;
+}
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;

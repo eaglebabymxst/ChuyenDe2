@@ -13,11 +13,11 @@
 	margin: 50px auto;
 }
 .login{
-	background: -webkit-gradient(linear, left bottom, left top, from(#a18cd1), to(#fbc2eb));
-	background: -webkit-linear-gradient(bottom, #a18cd1 0%, #fbc2eb 100%);
-	background: -moz-linear-gradient(bottom,  #a18cd1 0%, #fbc2eb 100%);
-	background: -o-linear-gradient(bottom,  #a18cd1 0%, #fbc2eb 100%);
-	background: linear-gradient(to top,  #a18cd1 0%, #fbc2eb 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(rgb(89, 224, 224)));
+	background: -webkit-linear-gradient(bottom, #ffffff 0%, rgb(89, 224, 224) 100%);
+	background: -moz-linear-gradient(bottom, #ffffff 0%, rgb(89, 224, 224) 100%);
+	background: -o-linear-gradient(bottom, #ffffff 0%, rgb(89, 224, 224) 100%);
+	background: linear-gradient(to top, #ffffff 0%, rgb(89, 224, 224) 100%);
 }
 h2{
 	color:rgb(42, 30, 150);
@@ -25,13 +25,21 @@ h2{
 	margin-bottom: 30px;
 	margin-top: 15px;
 }
-.login input{
+.login .txtpass, .txtemail {
 	width: 200px;
 	height: 40px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	border-radius: 5px;
 	border: 1px solid grey;
 	padding-left: 20px;
+}
+.nhomatkhau{
+	display: inline-block;
+	height: 30px;
+}
+#remember{
+	width: fit-content;
+	margin-right: 10px;
 }
 .login button{
 	width: 100px;

@@ -44,7 +44,7 @@ function show(ten) {
         if (e.target.files.length) {
             const src = URL.createObjectURL(e.target.files[0]);
             document.getElementById("imgPreview"+ten).src = src;
-            document.getElementById("FileAnh"+ten).src = src
+            document.getElementById("FileAnh"+ten).src = src 
             $("."+ten).removeClass("is-hidden")
         }
     }

@@ -71,7 +71,9 @@
 .lilich div{
     margin-bottom: 10px;
     font-size: 18px;
+    display: inline-block;
 }
+
 .anh{
     margin-left: 40px;
 }

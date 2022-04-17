@@ -9,8 +9,6 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-    
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,8 +47,6 @@
         </div>
     </div>
     <!-- Spinner End -->
-
-
     <!-- Navbar Start -->
     <nav style="font-weight: 900; font-family: 'Bitter', serif; height: 50px;" class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
@@ -289,8 +285,9 @@
     <!-- Form Login Start-->
     <div class="login is-hidden">
         <h2>Đăng Nhập</h2>
-        <input type="text" placeholder="Tên Đăng Nhập">
-        <input type="password" placeholder="Mật Khẩu">
+        <input type="text" placeholder="Tên Đăng Nhập" class="txtemail">
+        <input type="password" placeholder="Mật Khẩu" class="txtpass">
+        <div id="nhomatkhau"><input type="checkbox" name="" id="remember"><span>Nhớ Mật Khẩu</span></div>
         <button class="btn_login">Đăng Nhập</button>
         <button class="btn_close">Đóng</button>
     </div>
@@ -310,7 +307,7 @@
         <div class="thongtin1">
             <div class="cmnd">
                 <div class="icon"><i class='bx bx-credit-card-front'></i></div>
-                <div>CMND/CCCD</div>
+                <div>CMND/CCCD: </div>
                 <div id="CMND">Chưa Nhập</div>
             </div>
             <div class="ngaysinh">
@@ -320,57 +317,62 @@
             </div>
             <div class="quoctich">
                 <div class="icon"><i class='bx bxs-star'></i></div>
-                <div>Quốc Tịch</div>
+                <div>Quốc Tịch: </div>
                 <div id="quoctich">Chưa Nhập</div>
             </div>
             <div class="gioitinh">
                 <div class="icon"><i class='bx bx-male-female'></i></div>
-                <div>Giới Tính:</div>
+                <div>Giới Tính: </div>
                 <div id="gioitinh">Chưa Nhập</div>
                 
             </div>
             <div class="mail">
                 <div class="icon"><i class='bx bx-envelope' ></i></div>
-                <div>Email:</div>
+                <div>Email: </div>
                 <div id="mail">Chưa Nhập</div>
                 
             </div>
             <div class="sdt">
                 <div class="icon"><i class='bx bx-phone-call' ></i></div>
-                <div>Số Điện Thoại:</div>
+                <div>Số Điện Thoại: </div>
                 <div id="sdt">Chưa Nhập</div>
                 
             </div>
             <div class="diachi">
                 <div class="icon"><i class='bx bx-map' ></i></div>
-                <div>Địa Chỉ:</div>
+                <div>Địa Chỉ: </div>
                 <div id="diachi">Chưa Nhập</div>   
             </div>
         </div>
         <div style="color:rgb(32, 196, 155);font-size: 25px; margin-left: 25px; margin-bottom: 10px;">Thông Tin Lý Lịch</div>
         <div class="lilich">
             <div class="hotencha">
-                <div>Họ Và Tên Cha:</div>
+                <div style="float: left;">Họ Và Tên Cha: </div>
                 <div id="tencha">Chưa Nhập</div>
             </div>
+            <br>
             <div class="cmndcha">
-                <div>CMND:</div>
+                <div style="float: left;">CMND: </div>
                 <div id="cmndcha">Chưa Nhập</div>
             </div>
+            <br>
             <div class="nghenghiepcha">
-                <div>Nghề Nghiệp:</div>
+                <div style="float: left;">Nghề Nghiệp: </div>
                 <div id="nghenghiepcha">Chưa Nhập</div>
             </div>
+            <br>
             <div class="hotenme">
-                <div>Họ Và Tên Mẹ:</div>
+                <div style="float: left;">Họ Và Tên Mẹ: </div>
                 <div id="tenme">Chưa Nhập</div>
             </div>
+            <br>
             <div class="cmndme">
-                <div>CMND:</div>
+                <div style="float: left;">CMND: </div>
                 <div id="cmndme">Chưa Nhập</div>
             </div>
+            <br>
             <div class="nghenghiepme">
-                <div>Nghề Nghiệp:</div>
+                <div style="float: left;">Nghề Nghiệp: </div>
                 <div id="nghenghiepme">Chưa Nhập</div>
             </div>
         </div>
@@ -432,5 +434,4 @@
     <script src="js/XuatPDF.js" type="module"></script>
     <script src="https://unpkg.com/jspdf@1.5.3/dist/jspdf.min.js"></script>
 </body>
-
 </html>

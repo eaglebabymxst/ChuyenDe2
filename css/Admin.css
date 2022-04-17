@@ -1,0 +1,73 @@
+.Adminstart{
+    position: static;
+    background-image: url("../img/FileAnh4.jpg");
+    height: 698px;
+    width: 100%;
+    background-size: 100% 698px;
+}
+.Adleft{
+    position: relative;
+    height: 698px;
+    width: 25%;
+    background-color: #51FFFF;
+    float: left;
+}
+.Adright{
+    position: relative;
+    height: max-content;
+    width: 75%;
+    background-color: #51FFFF;
+    float: left;
+}
+#canvas_container {
+    width: 800px;
+    height: 450px;
+    overflow: auto;
+}
+.title{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.foot{
+    position: absolute;
+    left: 55px;
+    bottom: 10px;
+}
+.foot button{
+	width: 130px;
+	height: 40px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border:none;
+	background-color: #06BBCC;
+	color: white;
+	margin-top: 5px;
+	color: black;
+}
+.foot .duyet:hover{
+	text-align: center;
+	width: 150px;
+	transition: .8s;
+    background-color:springgreen;
+}
+.foot .khongduyet:hover{
+	text-align: center;
+	width: 140px;
+	transition: .8s;
+    background-color:red;
+}
+.danhsachsinhvien li i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.danhsachsinhvien li span{
+    position: absolute;
+    margin-top: 3px;
+    font-size: 18px;
+}
+.danhsachsinhvien{
+    height: 500px;
+    overflow: scroll;
+}
