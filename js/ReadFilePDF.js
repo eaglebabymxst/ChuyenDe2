@@ -15,7 +15,9 @@ function dautien() {
         event: "ShowDSSV",
        };
     queryDataPost("./php/uploadDatabase.php",dataSend,function (data) {
-        showPDF(data.items[0].idPDF,data.items[0].mail);
+        if(data.items[0] != null && data.items[0] != null){
+            showPDF(data.items[0].idPDF,data.items[0].mail);
+        }
     })
 }
 $(document).ready(function () {
@@ -33,10 +35,21 @@ function showPDF(namePDF,mail) {
     gnamePDF = namePDF;
 }
 document.getElementById("duyet").addEventListener('click', function () {
-    var noidung= "Hồ Sơ Của Bạn Được Duyệt Thành Công"
+    var noidung= "Hồ Sơ Của Bạn Được Duyệt Thành Công Mời Thanh Toán Tại "+" https://sandbox.vnpayment.vn/paymentv2/VnPayQR/Transaction/Index.html?token=060c39e426b449cd8587c34381898c47"
     sendEmail(email,noidung);
+    uploadtrangthaiduyet(gnamePDF);
+    showdata();
     dautien();
 })
+function uploadtrangthaiduyet(namepdf) {
+    datasend={
+        event : "uploadtrangthai",
+        NamePDF : namepdf
+    }
+    queryDataPost("./php/uploadDatabase.php",datasend,function (data) {
+        console.log(data.success)
+    })
+}
 document.getElementById("khongduyet").addEventListener('click', function () {
     var noidung= $(".txtlydo").val()
     if (noidung==""){

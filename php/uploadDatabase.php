@@ -26,20 +26,19 @@ switch ($event) {
         echo json_encode($res);
         mysqli_close($conn);
         break; 
-    case "updatepass":
-        $username=$_POST['username'];
-        $pass=$_POST['pass'];
-        $sql="update `users` set password='$pass' where username='".$username."'";
+    case "uploadtrangthai":
+        $NamePDF=$_POST['NamePDF'];
+        $sql="update `user` set trangthaiduyeths = '1' where idPDF = '".$NamePDF."'";
             if (mysqli_query($conn,$sql)) {
                 if(mysqli_affected_rows($conn)>0){
-                    $res[$event] = 1;
+                    $res['success'] = 1;
                 }
                 else
                 {
-                    $res[$event] = 0;
+                    $res['success'] = 0;
                 }
             } else {
-                $res[$event] = 0;
+                $res['success'] = 0;
             }
         echo json_encode($res);
         mysqli_close($conn);
